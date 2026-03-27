@@ -1,0 +1,134 @@
+body {
+    font-family: poppins, sans-serif;
+    background: linear-gradient(to bottom right, #9BAFD9, #103783);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.converter-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: #444444 solid 1px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 
+        110 15px 35px rgba(0, 0, 0, 0.15), 
+        110 110 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 { color: #333; margin-bottom: 20px; }
+
+input{
+        margin-right: 10px;
+        width: 93%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    color: #111010;
+    border: #444444 solid 1px;
+    
+}
+
+select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    border: #444444 solid 1px;
+}
+
+input:focus, select:focus { border-color: #667eea; }
+
+button {
+    background: linear-gradient(to right, #9BAFD9, #103783);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    /* We transition the shadow and transform since we can't transition the gradient itself */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover { 
+    /* This flips the colors as you requested */
+    background: linear-gradient(to right, #103783, #9BAFD9);
+    
+    /* Adds the glow you had before */
+    box-shadow: 0 4px 12px rgba(16, 55, 131, 0.4);
+    
+    /* Makes the button slightly "pop" toward the user */
+    transform: translateY(-1px);
+}
+
+button:active {
+    /* Makes the button feel like it's being pressed */
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(16, 55, 131, 0.2);
+}
+
+.result-display {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f4ff;
+    border-left: 5px solid #667eea;
+    border-radius: 4px;
+}
+
+to_currency {
+    font-weight: bold;
+    color: #333;
+    margin-top: 200px;
+}
+
+/* Make the dropdown container wider and easier to click */
+.currency-select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px; /* Prevents mobile zoom and makes text readable */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    appearance: none; /* Removes default browser arrow if you want a custom look */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns="http://www.w3.org/2000/svg"%20width="24"%20height="24"%20viewBox="0 0 24 24"><path%20fill="black"%20d="M7%2010l5%205%205-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    overflow: visible;
+}
+
+/* Ensure the card has enough space */
+.converter-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+/* Style the result so it pops */
+.result-display {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e7f3ff;
+    border-radius: 5px;
+    text-align: center;
+    color: #103783;
+}
